@@ -9,7 +9,7 @@ export const useCharacters = () => {
     useEffect(() => {
      
       reqCharacter().then((data) => {
-            setCharacters(data.results)
+        setCharacters(data.results)
       })
     }, []/* DEPENDECIAS*/)
 

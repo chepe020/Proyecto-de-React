@@ -12,3 +12,15 @@ export const reqCharacter = async () => {
 
     return data 
 }
+
+export const reqBuscarCharacter = async(name) => {
+   
+    const resp = await fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${time_stamp}&name=${name}`)
+    const {data} = await resp.json()
+ 
+    console.log(data)
+
+    return data
+
+}
+
